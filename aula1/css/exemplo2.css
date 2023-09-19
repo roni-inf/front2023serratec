@@ -1,0 +1,28 @@
+body {
+  font-size: 24px;
+  margin: 0;
+  font-family: Arial;
+}
+
+.texto1,
+.texto2,
+.texto3 {
+  text-align: justify;
+  width: 600px;
+  background-color: gray;
+}
+
+.texto1{
+    border: 10px dotted darkblue;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.texto3 {
+  background-color: blue;
+  height: 30px;
+}
+
+p{
+    margin: 10px;
+}

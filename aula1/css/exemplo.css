@@ -1,0 +1,17 @@
+body{
+    font-size: 24px;
+    font-family: Arial;
+    margin: 0px;
+}
+
+p{
+    margin: 0;
+    text-align: justify;
+    width: 600px;
+    border: 6px solid green;
+    background-color: gray;
+    padding: 20px 60px;
+    padding-left: 150px;
+    margin: 40px;
+    margin-left: 200px;
+}
