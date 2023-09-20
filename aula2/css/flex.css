@@ -1,0 +1,25 @@
+.container {
+  border: 3px solid red;
+  width: 640px;
+  height: 480px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.elementos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid blue;
+  width: 120px;
+  height: 120px;
+}
+
+.miolo{
+    border: 1px solid blue;
+    width: 50px;
+    height: 40px;
+}

@@ -1,0 +1,20 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#titulo{
+    color: aqua;
+}
+
+.texto, .missao{
+    color: brown;
+}
+
+p.missao{
+    font-family: Verdana;
+    font-style: italic;
+}
+
+article > .missao > strong{
+    color: pink;
+}

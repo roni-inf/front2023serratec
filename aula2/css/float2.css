@@ -1,0 +1,42 @@
+body{
+    font-size: 20px;
+    font-family: Arial;
+    text-align: left;
+}
+
+h1{
+    margin: 0px;
+}
+
+article{
+    background-color: gray;
+}
+
+.coluna1, .coluna2, .coluna3{
+    background-color: orange;
+}
+
+.coluna1{
+    float: left;
+    width: 30%;
+}
+
+.coluna2{
+    float: right;
+    width: 30%;
+}
+
+.coluna3{
+    margin-right: 40px;
+    float: right;
+    width: 30%;
+}
+
+
+
+div{
+    text-align: center;
+    text-decoration: underline;
+    background-color: aqua;
+    clear: both;
+}

@@ -1,0 +1,13 @@
+body{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+img{
+    float: left;
+    margin: 20px;
+    border: 5px solid black;
+    padding: 20px;
+    
+}
