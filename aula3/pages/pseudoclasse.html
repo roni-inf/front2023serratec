@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classe</title>
+    <style>
+      .meu-link:visited {
+        color: red;
+      }
+
+      .meu-link:link {
+        color: green;
+      }
+
+      .disciplinas {
+        font-size: 18px;
+      }
+      .disciplinas  li {
+        color: blue;
+      }
+      .disciplinas li:first-child{
+          color: red;
+      }
+      .disciplinas li:last-child{
+          color:green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>Link não foi visitado</h3>
+    <a href="http://www.google.com.br" class="meu-link">Google</a>
+
+    <h3>Link Visitado</h3>
+    <a href="http://www.climatempo.com.br" class="meu-link">Climatempo</a>
+
+    <ul class="disciplinas">
+      <li>Programação Orientada a Objetos</li>
+      <li>FrontEnd</li>
+      <li>API</li>
+      <li>Projeto Final</li>
+    </ul>
+  </body>
+</html>
