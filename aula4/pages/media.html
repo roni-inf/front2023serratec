@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numeros = [10, 20, 40, 90, 1];
+
+      function media(nums) {
+        let soma = 0;
+        for (let i = 0; i < nums.length; i++) {
+          soma += nums[i];
+        }
+        return Math.round(soma / nums.length);
+      }
+      document.write(`A média é:${media(numeros)}`);
+    </script>
+  </body>
+</html>

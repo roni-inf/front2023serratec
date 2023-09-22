@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numeros =[2,4,8,11,5];
+        const numerosDobro = numeros.map((num)=>num*2);
+        document.write(numerosDobro);
+
+        const numerosDobro2 = numeros.map(function calcula(num){
+            return num * 2;
+        });
+        /*Criar um vetor de times */
+        const times = ['Flamengo','Vasco','Botafogo','Fluminense','Serrano'];
+        const tamanhos = times.map((t)=>t.length);
+
+        numeros.forEach((numero)=>document.write(numero));
+
+        document.write('<br>'+tamanhos);
+    </script>
+</body>
+</html>

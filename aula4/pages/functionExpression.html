@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const soma = function (a=1, b=10) {
+        return a + b;
+      };
+
+      const subtracao = function (a, b) {
+        return a - b;
+      };
+
+      const nome = function(pessoa){
+        document.write(pessoa);
+      };
+
+      document.write(soma(5));
+      document.write(`<br>${subtracao(5,5)}`);
+      nome('<br>Roni');
+
+      const nomeArrow = (pessoa)=>document.write(pessoa);
+      nomeArrow('<br>Joaquim<br>');
+
+      const subtracaoArrow = (a,b)=>a-b;
+      document.write(subtracaoArrow(10,3));
+            
+    </script>
+  </body>
+</html>
