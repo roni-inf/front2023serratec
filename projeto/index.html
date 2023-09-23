@@ -5,59 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./css/estilo.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/componentes.css" />
   </head>
   <body>
-    <header>
+    <header class="layout-cabecalho">
       <div class="container">
         <img src="./img/cabecalho.png" alt="Internet" width="70px" />
       </div>
     </header>
 
-    <div id="planos">
+    <section class="layout-principal">
       <div class="container">
-        <article>
-          <h2>Básico</h2>
-          <div>R$ 79,90</div>
-          <ul>
-            <li>Até <strong>10 usuários</strong></li>
-            <li><strong>200MB</strong> de acesso</li>
-            <li>Instalação Grátis</li>
-            <li>Fibra Ótica</li>
-            <li>Sem Fidelidade</li>
-          </ul>
-          <footer>
-            <a href="./pages/assinar.html" class="botao">Assine</a>
-          </footer>
-        </article>
-        <article>
-          <h2>Intermediário</h2>
-          <div>R$ 99,90</div>
-          <ul>
-            <li>Até <strong>20 usuários</strong></li>
-            <li><strong>400MB</strong> de acesso</li>
-            <li>Instalação Grátis</li>
-            <li>Fibra Ótica</li>
-            <li>Sem Fidelidade</li>
-          </ul>
-          <footer>
-            <a href="./pages/assinar.html" class="botao">Assine</a>
-          </footer>
-        </article>
-        <article style="margin-right: 0;">
-          <h2>Avançado</h2>
-          <div>R$ 119,90</div>
-          <ul>
-            <li>Até <strong>50 usuários</strong></li>
-            <li><strong>800MB</strong> de acesso</li>
-            <li>Instalação Grátis</li>
-            <li>Fibra Ótica</li>
-            <li>Sem Fidelidade</li>
-          </ul>
-          <footer>
-            <a href="./pages/assinar.html" class="botao">Assine</a>
-          </footer>
-        </article>
+        <div class="principal">
+          <h1 class="principal__titulo">
+            A melhor internet fibra ótica do estado do Rio de Janeiro
+          </h1>
+          <p class="principal__subtitulo">Pacotes que cabem no seu orçamento</p>
+        </div>
+        <div class="principal__acao">
+          <a href="#planos" class="botao botao--assinar">Conheça os pacotes</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="layout-depoimento">
+      <div class="container">
+        <div class="depoimento">
+          <blockquote>
+            Gostei muito da internet da empresa, não tive problemas com queda de
+            conexão. Estou satisfeito com o serviço prestado.
+          </blockquote>
+          <div class="depoimento__autor">
+            <img src="./img/man.png" alt="Teste" width="150">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="planos" class="layout-planos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <article class="plano">
+              <h2 class="plano__cabecalho">Básico</h2>
+              <div class="plano__preco">R$ 79,90</div>
+              <ul class="plano__caracteristicas">
+                <li>Até <strong>10 usuários</strong></li>
+                <li><strong>200MB</strong> de acesso</li>
+                <li>Instalação Grátis</li>
+                <li>Fibra Ótica</li>
+                <li>Sem Fidelidade</li>
+              </ul>
+              <footer class="plano__rodape">
+                <a href="./pages/assinar.html" class="botao">Assine</a>
+              </footer>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="plano">
+              <h2 class="plano__cabecalho">Intermediário</h2>
+              <div class="plano__preco">R$ 99,90</div>
+              <ul class="plano__caracteristicas">
+                <li>Até <strong>20 usuários</strong></li>
+                <li><strong>400MB</strong> de acesso</li>
+                <li>Instalação Grátis</li>
+                <li>Fibra Ótica</li>
+                <li>Sem Fidelidade</li>
+              </ul>
+              <footer class="plano__rodape">
+                <a href="./pages/assinar.html" class="botao">Assine</a>
+              </footer>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="plano">
+              <h2 class="plano__cabecalho">Avançado</h2>
+              <div class="plano__preco">R$ 119,90</div>
+              <ul class="plano__caracteristicas">
+                <li>Até <strong>50 usuários</strong></li>
+                <li><strong>800MB</strong> de acesso</li>
+                <li>Instalação Grátis</li>
+                <li>Fibra Ótica</li>
+                <li>Sem Fidelidade</li>
+              </ul>
+              <footer class="plano__rodape">
+                <a href="./pages/assinar.html" class="botao">Assine</a>
+              </footer>
+            </article>
+          </div>
+        </div>
       </div>
     </div>
   </body>
