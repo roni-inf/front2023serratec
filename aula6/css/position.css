@@ -1,0 +1,43 @@
+main{
+    background-color: #ececec;
+    height: 300vh;
+    margin: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+div{
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.static{
+    background-color: blue;
+    z-index: 101;
+}
+
+.relative{
+    position: relative;
+    width: 50%;
+    top:-30px;
+    margin: 0 auto;
+    background-color:red;
+    z-index:100;
+}
+.absolute{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background-color: gray;
+}
+.fixed{
+    position: fixed;
+    bottom: 64px;
+    right: 64px;
+    background-color: yellow
+}
+.sticky{
+    position: sticky;
+    top: 64px;
+    background-color: green;
+}

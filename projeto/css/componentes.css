@@ -23,6 +23,7 @@
 
 /* Pacotes do plano de internet*/
 .plano {
+  position: relative;
   padding: 10px;
   border: 1px solid #95a4a5;
   font-size: 1rem;
@@ -62,6 +63,19 @@
   text-align: center;
 }
 
+.plano--mais--vendido::after{
+  position: absolute;
+  top: -10px;
+  left: -10px;
+
+  padding: 0 10px;
+  line-height: 1.5;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  content: "Mais Vendido";
+}
+
 .botao {
   padding: 12px 16px;
 
@@ -95,7 +109,7 @@
 
 .principal__titulo {
   margin: 0;
-
+  padding-top: 30px;
   color: #fff;
 
   font-size: 2.25em;
@@ -118,15 +132,35 @@
 }
 
 .depoimento {
+  
   font-size: 1.5em;
   font-family: Arial;
 }
 
 .depoimento > blockquote {
+  position: relative;
   margin: 0;
   padding: 0 60px;
   font-size: 1.25em;
   text-align: center;
+}
+
+.depoimento > blockquote::before{
+  position: absolute;
+  left: 0;
+  top: -40px;
+  color: gray;
+  font-size: 6em;
+  content: "\201C";
+}
+
+.depoimento > blockquote::after{
+  position: absolute;
+  top:40px;
+  right: 0px;
+  color: gray;
+  font-size: 6em;
+  content: "\201D";
 }
 
 .depoimento__autor{
@@ -138,4 +172,14 @@
 
 .depoimento__autor > p{
   font-size: 10px;
+}
+
+.titulo-formulario{
+  margin: 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+
+  font-size: 2rem;
+  color: blue;
+
 }
