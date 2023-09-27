@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <p id="texto">Aula de Java Script</p>
+    <div id="caixa">
+
+    </div>
+    <script>
+    //   let nome = prompt("Nome:");
+    //   let res = confirm(`${nome} deseja confirmar inscrição:`);
+    //   document.write(res ? "Incrição confirmada" : "Não inscrito");
+
+        document.getElementById("texto").style.color='black';
+        document.getElementById("texto").style.fontSize='50px';
+        let texto = document.getElementById("texto");
+        texto.style.fontFamily = 'Arial';
+        let caixa = document.getElementById('caixa');
+        caixa.style.border='2px solid black';
+        caixa.style.width = '300px';
+        caixa.style.height = '300px';
+
+        let a = document.getElementById('texto').innerHTML = 'Aula6';
+        
+    </script>
+  </body>
+</html>

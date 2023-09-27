@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 150px;
+        height: 150px;
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="caixa"
+      onmouseover="alterarCor(this,'#ff8')"
+      onmouseout="alterarCor(this,'#fff')"
+    ></div>
+    <button
+      onclick="alert('teste')"
+      onmouseover="alterarCor(document.getElementById('caixa'),'#f23')"
+    >
+      Clique Aqui
+    </button>
+
+    <script>
+      function alterarCor(obj, cor) {
+        obj.style.backgroundColor = cor;
+      }
+
+      function saudacao() {
+        let data = new Date();
+        let hora = data.getUTCHours();
+        let saudacao =
+          hora < 12 ? "Bom dia" : hora < 18 ? "Boa tarde" : "Boa noite";
+        alert(saudacao);
+      }
+      saudacao();
+    </script>
+  </body>
+</html>
